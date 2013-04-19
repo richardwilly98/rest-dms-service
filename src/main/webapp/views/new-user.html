@@ -1,0 +1,26 @@
+﻿<!-- Modal (external ./partials/modal.html or inline ng-template) -->
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3>New user</h3>
+</div>
+<div class="modal-body">
+    <form>
+    <fieldset>
+        <label>Name</label>
+        <input type="text" placeholder="Type something…" autofocus="autofocus">
+        <label>City</label>
+        <input type="text" placeholder="Type something…">
+        <label>Birth date</label>
+        <div class="control-group input-append">
+            <input type="text" data-date-format="mm/dd/yy" class="datepicker" bs-datepicker="" />
+            <button type="button" class="btn" data-toggle="datepicker"><i class="icon-calendar"></i></button>
+        </div>
+    </fieldset>
+    </form>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn" ng-click="dismiss()">
+        Close</button>
+    <button class="btn btn-primary" ng-click="modal.saved=true;dismiss()">
+        Save changes</button>
+</div>

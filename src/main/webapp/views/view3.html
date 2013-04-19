@@ -1,0 +1,9 @@
+<div class="container">
+    <br />
+    <button type="button" class="btn btn-large btn-primary" bs-modal="'views/new-user.html'">New User</button>
+</div>
+<div data-ng-controller="AlertDemoCtrl">
+    <alert data-ng-repeat="alert in alerts" type="alert.type" close="closeAlert($index)">{{alert.msg}}</alert>
+    <button class='btn' data-ng-click="addAlert()">
+        Add Alert</button>
+</div>
